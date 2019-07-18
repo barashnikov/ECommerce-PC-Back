@@ -1,4 +1,9 @@
 package be.businesstraining.repository;
 
-public interface UserRepository {
+import be.businesstraining.domain.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Long> {
+
+
 }
